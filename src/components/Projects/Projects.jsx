@@ -6,8 +6,11 @@ const projects = [
   {
     title: "E-Commerce Website",
     imageSrc: getImageUrl("ecommerce.png"),
-    description:
-      "A responsive e-commerce frontend built with React and Vite, featuring product listings, interactive UI, and seamless navigation across devices. It replicates a real-world shopping platform and highlights core web development skills.",
+    description: [
+      "Built with React and Vite, featuring a fully responsive layout for seamless browsing across devices.",
+      "Includes interactive UI components, product listings, and category navigation.",
+      "Mimics a real shopping experience to showcase practical frontend development skills.",
+    ],
     skills: ["React", "HTML", "CSS", "JavaScript", "Tailwind CSS"],
     demo: "https://astounding-pegasus-81f8dc.netlify.app",
     source: "https://github.com/sukriti-waani/ecommerce-website",
@@ -15,8 +18,11 @@ const projects = [
   {
     title: "Food Delivery Website",
     imageSrc: getImageUrl("food.png"),
-    description:
-      "A modern, responsive food delivery site with sections like Home, About, Products, Reviews, and FAQ. It offers smooth navigation and a clean UI designed for real-world usability.",
+    description: [
+      "Features sections like Home, About, Products, Reviews, and FAQ with smooth scroll-based navigation.",
+      "Clean and responsive UI designed with HTML, CSS, JavaScript, and Bootstrap.",
+      "Focused on real-world usability and modern design patterns.",
+    ],
     skills: ["HTML", "CSS", "JavaScript", "Bootstrap"],
     demo: "https://guileless-dieffenbachia-f750c8.netlify.app",
     source: "https://github.com/sukriti-waani/food_delivery_website",
@@ -24,8 +30,11 @@ const projects = [
   {
     title: "Myntra Functional Clone",
     imageSrc: getImageUrl("myntra.png"),
-    description:
-      "A frontend clone of Myntra with dynamic filtering, search, and real-time product updates using JavaScript. It demonstrates strong DOM manipulation and interactive UI design.",
+    description: [
+      "Recreates Myntra’s UI with functional filtering, search, and product update features.",
+      "Uses core JavaScript for real-time DOM manipulation without any frameworks.",
+      "Demonstrates your ability to build scalable, interactive web UIs from scratch.",
+    ],
     skills: ["HTML", "CSS", "JavaScript"],
     demo: "https://stellar-mochi-a54a9c.netlify.app",
     source: "https://github.com/sukriti-waani/Myntra_Functional_Clone",
@@ -33,22 +42,28 @@ const projects = [
   {
     title: "Weather App",
     imageSrc: getImageUrl("weather.png"),
-    description:
-      "A weather app that fetches real-time weather data using an API. JavaScript handles data fetching and UI updates based on user input or location.",
-    skills: ["HTML", "CSS", "JavaScript"],
+    description: [
+      "Fetches and displays real-time weather data using a public weather API.",
+      "Handles user input and updates UI dynamically based on location or city.",
+      "Highlights your skills in API integration, async JavaScript, and clean UI design.",
+    ],
+    skills: ["HTML", "CSS", "API", "JavaScript"],
     demo: "https://beautiful-lamington-c4373e.netlify.app",
     source: "https://github.com/sukriti-waani/weather_app",
   },
   {
     title: "Todo App List",
     imageSrc: getImageUrl("todo.png"),
-    description:
-      "The project is a React Todo app that uses the Context API for state management and localStorage for saving data. Users can add, edit, and delete todos, and the list stays even after a page refresh. State is synced with localStorage using useEffect, keeping the app data persistent and organized without prop drilling.",
+    description: [
+      "Built using React with Context API for centralized state management.",
+      "Persists data in localStorage using useEffect, even after page refresh.",
+      "Users can add, edit, and delete tasks — no prop drilling, making it scalable.",
+    ],
     skills: ["React", "HTML", "CSS", "JavaScript", "Tailwind CSS"],
     demo: "loquacious-dieffenbachia-6165a8.netlify.app",
-    source: "https://github.com/sukriti-waani/React/tree/main/10todoContextLocal",
-  }
-
+    source:
+      "https://github.com/sukriti-waani/React/tree/main/10todoContextLocal",
+  },
 ];
 
 export const Projects = () => {
@@ -98,8 +113,9 @@ export const Projects = () => {
                 <h3 className="text-xl font-bold text-white mb-2 group-hover:text-[#576cbc] transition-colors duration-300">
                   {project.title}
                 </h3>
+                {/* Join description array as string here for cards */}
                 <p className="text-gray-400 text-sm mb-4 line-clamp-2">
-                  {project.description}
+                  {project.description.join(" ")}
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {project.skills.map((skill, tagIndex) => (
@@ -145,9 +161,13 @@ export const Projects = () => {
                   <h3 className="text-2xl font-bold text-white mb-4">
                     {selectedProject.title}
                   </h3>
-                  <p className="text-gray-400 mb-6">
-                    {selectedProject.description}
-                  </p>
+
+                  {/* Description as bullet points */}
+                  <ul className="list-disc list-inside text-gray-400 mb-6 space-y-1">
+                    {selectedProject.description.map((point, idx) => (
+                      <li key={idx}>{point}</li>
+                    ))}
+                  </ul>
 
                   <div className="flex flex-wrap gap-3 mb-6">
                     {selectedProject.skills.map((skill, index) => (

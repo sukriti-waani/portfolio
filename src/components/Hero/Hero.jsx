@@ -21,10 +21,14 @@ const Hero = () => {
           // Grid positioning and alignment for different screen sizes
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
         >
-          {/* Heading with gradient text and responsive font sizes */}
-          <h3 className="text-[var(--color-text)] mb-8 text-5xl sm:text-6xl lg:text-5xl font-extrabold leading-[1.3] sm:leading-[1.2] lg:leading-[1.15] drop-shadow-lg">
-            Greetings, I’m Sukriti Waani <br />
-            <span className="text-[var(--color-primary)] font-semibold">
+          {/* Heading with gradient text and light/shadow effects */}
+          <h3 className="text-[var(--color-text)] mb-8 text-5xl sm:text-6xl lg:text-5xl font-extrabold leading-[1.3] sm:leading-[1.2] lg:leading-[1.15] drop-shadow-[0_5px_15px_rgba(0,0,0,0.3)] transition-all duration-500 ease-in-out">
+            Greetings, I’m{" "}
+            <span className="text-[var(--color-primary)] drop-shadow-[0_0_10px_var(--color-primary)] transition duration-300">
+              Sukriti Waani
+            </span>
+            <br />
+            <span className="text-[var(--color-primary)] font-semibold drop-shadow-[0_0_5px_var(--color-primary)]">
               I'm a
             </span>
             <br />
@@ -41,7 +45,7 @@ const Hero = () => {
               wrapper="span"
               speed={50}
               repeat={Infinity}
-              className="bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-seconday)] bg-clip-text text-transparent font-bold"
+              className="bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-seconday)] bg-clip-text text-transparent font-bold drop-shadow-[0_0_8px_var(--color-seconday)] transition-all duration-300"
             />
           </h3>
 
@@ -57,8 +61,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row sm:items-center gap-5 sm:gap-8">
             {/* Button to contact section */}
             <a
-              id="contact"
-              href="/#contact"
+              href="#contact"
               className="px-10 py-3 rounded-full bg-gradient-to-r from-[var(--color-seconday)] to-[var(--color-primary)] text-white font-semibold shadow-xl transition-transform transform hover:scale-105"
             >
               Contact Me
