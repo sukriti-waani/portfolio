@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const Hero = () => {
   return (
     // Hero Section Wrapper with background gradient and vertical padding
-    <section className="lg:py-24 bg-gradient-to-tr from-primary via-gray-800 to-gray-900">
+    <section className="lg:py-24 bg-gradient-to-tr from-[#030014] via-[#0a0a22] to-[#1f1f3a]">
       {/* Grid container for content layout */}
       <div className="grid grid-cols-1 sm:grid-cols-12 gap-10 px-8 sm:px-16">
         {/* TEXT CONTENT SECTION */}
@@ -57,6 +57,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row sm:items-center gap-5 sm:gap-8">
             {/* Button to contact section */}
             <a
+              id="contact"
               href="/#contact"
               className="px-10 py-3 rounded-full bg-gradient-to-r from-[var(--color-seconday)] to-[var(--color-primary)] text-white font-semibold shadow-xl transition-transform transform hover:scale-105"
             >
@@ -87,9 +88,7 @@ const Hero = () => {
           className="col-span-4 place-self-center mt-10 lg:mt-0 flex justify-center"
         >
           {/* Image container with white glow shadow */}
-          <div
-            className=" relative w-[280px] h-[280px] lg:w-[380px] lg:h-[380px] rounded-full overflow-hidden shadow-[0_0_20px_8px_rgba(255,255,255,0.3)] before:content-[''] before:absolute before:left-[50px] before:bottom-0 before:w-[80px] before:h-[4px] before:bg-white before:rounded before:shadow-white before:shadow-lg transition-shadow duration-300 hover:shadow-[0_0_25px_12px_rgba(255,255,255,0.5)]"
-          >
+          <div className=" relative w-[280px] h-[280px] lg:w-[380px] lg:h-[380px] rounded-full overflow-hidden shadow-[0_0_20px_8px_rgba(255,255,255,0.3)] before:content-[''] before:absolute before:left-[50px] before:bottom-0 before:w-[80px] before:h-[4px] before:bg-white before:rounded before:shadow-white before:shadow-lg transition-shadow duration-300 hover:shadow-[0_0_25px_12px_rgba(255,255,255,0.5)]">
             <img
               src={Image}
               alt="hero"
