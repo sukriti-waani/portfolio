@@ -48,7 +48,7 @@ const projects = [
       "Highlights your skills in API integration, async JavaScript, and clean UI design.",
     ],
     skills: ["HTML", "CSS", "API", "JavaScript"],
-    demo: "https://beautiful-lamington-c4373e.netlify.app",
+    demo: "lloquacious-dieffenbachia-6165a8.netlify.app",
     source: "https://github.com/sukriti-waani/weather_app",
   },
   {
