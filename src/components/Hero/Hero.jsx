@@ -69,7 +69,7 @@ const Hero = () => {
 
             {/* Button to open resume in new tab */}
             <a
-              href="https://drive.google.com/file/d/1IxlFD2K-Kcz7QAYkX0IrxuGh1DnUe7fM/view?usp=sharing"
+              href="https://drive.google.com/file/d/1a4sIydLxuQcn6OL0vg8bz9E2JGmYeoWm/view?usp=sharing"
               className="px-10 py-3 rounded-full border-2 border-[var(--color-primary)] text-[var(--color-primary)] hover:bg-[var(--color-primary)] hover:text-white transition-shadow shadow-md font-semibold"
               target="_blank"
               rel="noopener noreferrer"
