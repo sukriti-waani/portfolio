@@ -1,8 +1,7 @@
 "use client";
-import React from "react";
-import Image from "../../../assets/photo.jpg";
-import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
+import { TypeAnimation } from "react-type-animation";
+import Image from "../../../assets/photo.jpg";
 
 const Hero = () => {
   return (
@@ -22,7 +21,7 @@ const Hero = () => {
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
         >
           {/* Heading with gradient text and light/shadow effects */}
-          <h3 className="text-[var(--color-text)] mb-8 text-5xl sm:text-6xl lg:text-5xl font-extrabold leading-[1.3] sm:leading-[1.2] lg:leading-[1.15] drop-shadow-[0_5px_15px_rgba(0,0,0,0.3)] transition-all duration-500 ease-in-out">
+          <h3 className="text-[var(--color-text)] mb-8 text-4xl sm:text-6xl lg:text-5xl font-extrabold leading-[1.3] sm:leading-[1.2] lg:leading-[1.15] drop-shadow-[0_5px_15px_rgba(0,0,0,0.3)] transition-all duration-500 ease-in-out">
             Greetings, I’m{" "}
             <span className="text-[var(--color-primary)] drop-shadow-[0_0_10px_var(--color-primary)] transition duration-300">
               Sukriti Waani
@@ -34,14 +33,7 @@ const Hero = () => {
             <br />
             {/* Typewriter animation for roles */}
             <TypeAnimation
-              sequence={[
-                "Frontend Developer",
-                2000,
-                "Web Developer",
-                2000,
-                "UI/UX Designer",
-                2000,
-              ]}
+              sequence={["MERN Stack Developer", 2000, "UI/UX Designer", 2000]}
               wrapper="span"
               speed={50}
               repeat={Infinity}
@@ -49,12 +41,15 @@ const Hero = () => {
             />
           </h3>
 
-          <p className="text-gray-300 text-lg sm:text-xl max-w-xl mb-10 leading-relaxed drop-shadow-md font-semibold">
-            I’m a Frontend Developer and UI/UX Designer who builds responsive
-            websites with smooth, user-friendly experiences. I blend creative
-            design and clean code to deliver digital products that are both
-            functional and visually appealing. Hardworking, detail-focused, and
-            always eager to learn.
+          <p className="text-gray-300 text-lg sm:text-l max-w-xl mb-10 leading-relaxed drop-shadow-md font-semibold">
+            I’m a MERN Stack Developer and UI/UX Designer who builds scalable,
+            responsive, and user-friendly web applications. I combine creative
+            design thinking with clean, efficient code to deliver digital
+            products that are both visually appealing and highly functional.
+            With experience in MongoDB, Express.js, React, and Node.js, I bring
+            ideas to life from concept to deployment. Hardworking,
+            detail-oriented, and passionate about continuous learning, I strive
+            to create seamless user experiences and impactful solutions.
           </p>
 
           {/* Call-to-action buttons */}
@@ -69,7 +64,7 @@ const Hero = () => {
 
             {/* Button to open resume in new tab */}
             <a
-              href="https://drive.google.com/file/d/1a4sIydLxuQcn6OL0vg8bz9E2JGmYeoWm/view?usp=sharing"
+              href="https://drive.google.com/file/d/1ROuyoezT523affGDyGaGrQ_A9JkHEX4f/view?usp=sharing"
               className="px-10 py-3 rounded-full border-2 border-[var(--color-primary)] text-[var(--color-primary)] hover:bg-[var(--color-primary)] hover:text-white transition-shadow shadow-md font-semibold"
               target="_blank"
               rel="noopener noreferrer"

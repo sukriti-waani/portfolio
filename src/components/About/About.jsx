@@ -1,7 +1,3 @@
-import React from "react";
-import { getImageUrl } from "../../utilis";
-import styles from "./About.module.css";
-
 export const About = () => {
   return (
     <section id="about" className="py-20 bg-[#030014]">
@@ -22,26 +18,29 @@ export const About = () => {
           data-aos-duration="1000"
         >
           <p className="text-lg leading-relaxed">
-            I’m a third-year B.Tech Computer Science Engineering student with a
-            strong passion for continuous learning and innovation. Currently,
-            I’m honing my skills in Data Structures, Algorithms, and Front-End
-            Web Development using modern technologies.
+            I’m a third-year B.Tech Computer Science Engineering student
+            passionate about continuous learning, problem-solving, and
+            innovation in technology.
             <br />
+            I’m currently strengthening my skills in Data Structures and
+            Algorithms (DSA) while building full stack web applications using
+            the MERN Stack (MongoDB, Express.js, React.js, Node.js). Alongside
+            development, I focus on UI/UX design, creating user-friendly and
+            visually appealing digital experiences.
             <br />
-            A quick learner and analytical thinker, I enjoy solving real-world
-            problems and building user-friendly web interfaces. I aim to
-            contribute to meaningful projects, collaborate in team environments,
-            and grow through internships and open-source work.
-            <br />
-            <br />
-            Curious and driven, I actively seek opportunities to learn from
-            professionals, explore emerging technologies, and make an impact
-            through my work.
+            Recently, I’ve also explored Robotic Process Automation (RPA) using
+            UiPath, building bots to automate tasks like deadline reminders and
+            workflow management. This has fueled my interest in combining
+            software development with automation to deliver smarter solutions.
+            <br />I enjoy building real-world applications, collaborating on
+            tech-driven projects, contributing to open-source, and seeking
+            internship opportunities to gain practical exposure while
+            continuously exploring new technologies.
           </p>
         </div>
 
         {/* Skills Cards */}
-        <div className={styles.content}>
+        {/* <div className={styles.content}>
           <ul className={styles.aboutItems}>
             <li
               className={styles.aboutItem}
@@ -79,6 +78,27 @@ export const About = () => {
               </div>
             </li>
 
+            {/* ✅ New Backend Section */}
+        {/* <li
+              className={styles.aboutItem}
+              data-aos="fade-right"
+              data-aos-duration="1100"
+              data-aos-delay="300"
+            >
+              <img src={getImageUrl("backend.png")} alt="Backend icon" />
+              <div className={styles.aboutItemText}>
+                <h3>Backend Developer</h3>
+                <p>
+                  I specialize in building scalable and secure server-side
+                  applications using Node.js and Express.js. From designing
+                  RESTful APIs to managing authentication, middleware, and
+                  server logic, I ensure smooth integration between the frontend
+                  and backend. I focus on performance, security, and
+                  maintainability.
+                </p>
+              </div>
+            </li>
+
             <li
               className={styles.aboutItem}
               data-aos="fade-right"
@@ -97,7 +117,7 @@ export const About = () => {
               </div>
             </li>
           </ul>
-        </div>
+        </div> */}
       </div>
     </section>
   );
