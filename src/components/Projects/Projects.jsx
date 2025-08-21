@@ -213,6 +213,30 @@ export const Projects = () => {
                     ))}
                   </ul>
                   <div className="flex flex-wrap gap-3 mb-6">
+                    {/* View Code button */}
+                    <a
+                      href={selectedProject.source}
+                      className="px-6 py-2 border border-[#576cbc] text-[#576cbc] rounded-full hover:bg-[#576cbc] hover:text-white transition-all duration-300"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      View Code
+                    </a>
+
+                    {/* Live Demo button (only if demo exists) */}
+                    {/* Live Demo button (only if demo exists) */}
+                    {selectedProject.demo && (
+                      <a
+                        href={selectedProject.demo}
+                        className="px-6 py-2 border border-[#7fb3ff] text-[#7fb3ff] rounded-full hover:bg-[#7fb3ff] hover:text-white transition-all duration-300"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Live Demo
+                      </a>
+                    )}
+                  </div>
+                  <div className="flex flex-wrap gap-3 mb-6">
                     {selectedProject.skills.map((skill, index) => (
                       <span
                         key={index}
@@ -222,14 +246,6 @@ export const Projects = () => {
                       </span>
                     ))}
                   </div>
-                  <a
-                    href={selectedProject.source}
-                    className="px-6 py-2 border border-[#576cbc] text-[#576cbc] rounded-full hover:bg-[#576cbc] hover:text-white transition-all duration-300"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    View Code
-                  </a>
                 </div>
               </motion.div>
             </motion.div>
